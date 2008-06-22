@@ -1,0 +1,16 @@
+
+0.2.01  07 June 2007
+        - Replaced MD5 signatures with a modified Fletcher 8-bit checksum
+          to avoid endian-ness problems on PowerPC Macs.
+        - Fixed a typo in the AB calcualtions that were preventing records
+          for AB.
+        - Changed handling of boolean fields in BG records.
+
+0.2.00  26 April 2007
+        - Fixed some errors in updating database.
+        - Added database signatures.
+        - Cleaned up the database code.
+
+0.1.00  09 April 2007
+        - Initial release.
+
