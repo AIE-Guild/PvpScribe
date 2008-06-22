@@ -1,6 +1,6 @@
 ## Title: PvPScribe |cff7fff7f -Ace2-|r
 ## Notes: AIE PvP Statistics Recorder
-## Version: 0.2.00
+## Version: 0.2.01
 ## Interface: 20006
 ## Author: Mark Rogaski, a.k.a Stigg @ Earthen Ring
 ## eMail: stigg@pobox.com
