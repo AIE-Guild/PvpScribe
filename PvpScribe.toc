@@ -4,7 +4,7 @@
 ## Interface: 30000
 ## Author: Mark Rogaski, a.k.a Stigg @ Earthen Ring
 ## eMail: stigg@pobox.com
-## X-CVS-Id: $Id: PvpScribe.toc,v 1.5 2007-06-08 03:56:16 wendigo Exp $
+## X-CVS-Id: $Id$
 ## OptionalDeps: Ace2
 ## SavedVariablesPerCharacter: PvpScribeDB
 ## X-Category: Interface Enhancements

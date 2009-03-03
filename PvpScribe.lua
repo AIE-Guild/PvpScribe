@@ -2,7 +2,7 @@
 
     PvpScribe.lua -- AIE PvP statistics recorder add-on
     Author: Mark Rogaski, stigg@pobox.com
-    $Id: PvpScribe.lua,v 1.9 2007-06-08 03:38:51 wendigo Exp $
+    $Id$
 
     Copyright (c) 2007, 2009; Mark Rogaski.
 
