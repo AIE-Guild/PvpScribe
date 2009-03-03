@@ -1,10 +1,10 @@
 --[[
 
     PvpScribe.lua -- AIE PvP statistics recorder add-on
-    Author: Mark Rogaski, stigg@spooky.org
+    Author: Mark Rogaski, stigg@pobox.com
     $Id: PvpScribe.lua,v 1.9 2007-06-08 03:38:51 wendigo Exp $
 
-    Copyright (c) 2007, Mark Rogaski.
+    Copyright (c) 2007, 2009; Mark Rogaski.
 
     All rights reserved.
 
@@ -45,7 +45,7 @@ PvpScribe = AceLibrary('AceAddon-2.0'):new('AceConsole-2.0',
 --
 -- Addon properties
 --
-PvpScribe.VERSION = '0.2.01'
+PvpScribe.VERSION = '0.3.00'
 
 PvpScribe.statsRecorded             = false
 PvpScribe.currentBattlegroundStart  = nil
@@ -92,8 +92,6 @@ PvpScribe:RegisterDB('PvpScribeDB', 'PvpScribeDB', 'char')
 PvpScribe:RegisterDefaults('char', {
     config = {
         maxHistory = 256,
-        warCry     = false,
-        warCryText = 'AIEEEEEEEEEEEEE!!!',
     },
     charInfo = {
         name      = '',
@@ -218,14 +216,17 @@ function PvpScribe:OnDisable()
 end
 
 function PvpScribe:UPDATE_BATTLEFIELD_STATUS()
+    self:LevelDebug(3, 'received event: UPDATE_BATTLEFIELD_STATUS')
     PvpScribe:ExamineBGStatus()
 end
 
 function PvpScribe:ZONE_CHANGED_NEW_AREA()
+    self:LevelDebug(3, 'received event: ZONE_CHANGED_NEW_AREA')
     if PvpScribe.statsRecorded then
         PvpScribe.statsRecorded             = false
         PvpScribe.currentBattlegroundStart  = nil
         PvpScribe.currentBattlegroundName   = nil
+        self:LevelDebug(3, 'set currentBattlegroundName = NIL')
         PvpScribe.currentBattlegroundID     = nil
     end
 end
@@ -342,6 +343,8 @@ function PvpScribe:ExamineBGStatus()
                     PvpScribe.currentBattlegroundStart = 
                             date('%Y-%m-%d %H:%M:%S')
                     PvpScribe.currentBattlegroundName  = mapName
+                    self:LevelDebug(3, 
+                            'set currentBattlegroundName = ' .. mapName)
                     PvpScribe.currentBattlegroundID    = instanceID
                 end
                 local winner = GetBattlefieldWinner()

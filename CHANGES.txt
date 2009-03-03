@@ -1,8 +1,10 @@
+0.3.00	02 March 2009
+        - Changed Ace2 includes to external definitions.
 
 0.2.01  07 June 2007
         - Replaced MD5 signatures with a modified Fletcher 8-bit checksum
           to avoid endian-ness problems on PowerPC Macs.
-        - Fixed a typo in the AB calcualtions that were preventing records
+        - Fixed a typo in the AB calculations that were preventing records
           for AB.
         - Changed handling of boolean fields in BG records.
 

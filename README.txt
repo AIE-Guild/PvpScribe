@@ -3,7 +3,7 @@ PvpScribe
 
 AIE PvP Statistics Add-On for World of Warcraft
 
-Author: Mark Rogaski <stigg@spooky.org>
+Author: Mark Rogaski <stigg@pobox.com>
 --------------------------------------------------------------------------
 
 --------------------------------------------------------------------------
@@ -53,7 +53,7 @@ Distribution
 The latest (and hopefully greatest) version of PvpScribe is avaialble at
 the following location.
 
-https://www.petrichor.us/tech:software#pvpscribe
+http://files.aie-guild.org/addon/PvpScribe/
 
 
 --------------------------------------------------------------------------
@@ -92,7 +92,7 @@ Copyright and License
         http://www.wowace.net/wiki/Ace2
 
 
-    Copyright (c) 2007, Mark Rogaski.
+    Copyright (c) 2007, 2009; Mark Rogaski.
 
     All rights reserved.
 
